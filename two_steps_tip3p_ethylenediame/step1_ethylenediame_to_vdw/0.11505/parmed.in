@@ -1,0 +1,6 @@
+parm en_step1.prmtop
+loadRestrt en_step1.inpcrd
+setOverwrite True
+scee 1.1
+outparm en_step1_final.prmtop en_step1_final.inpcrd
+printdihedrals

@@ -1,0 +1,20 @@
+
+ NSTEP =   100000   TIME(PS) =     200.000  TEMP(K) =   294.81  PRESS =     0.0
+ Etot   =    -53590.6497  EKtot   =     12277.4239  EPtot      =    -65868.0736
+ BOND   =         1.1712  ANGLE   =         3.9183  DIHED      =         0.3956
+ 1-4 NB =         0.0690  1-4 EEL =         0.3473  VDWAALS    =      9696.7815
+ EELEC  =    -75570.7565  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ DV/DL  =       -15.3065
+ NMR restraints: Bond =    0.000   Angle =     0.000   Torsion =     0.000
+===============================================================================
+
+|  Final Performance Info:
+|     -----------------------------------------------------
+|     Average timings for last   25000 steps:
+|     Elapsed(s) =      62.93 Per Step(ms) =       2.52
+|         ns/day =      68.65   seconds/ns =    1258.60
+|
+|     Average timings for all steps:
+|     Elapsed(s) =     246.39 Per Step(ms) =       2.46
+|         ns/day =      70.13   seconds/ns =    1231.94
+|     -----------------------------------------------------
