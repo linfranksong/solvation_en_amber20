@@ -1,0 +1,8 @@
+# Log started on 09/14/2020 [mm/dd/yyyy] at 14:05:20
+parm en_step2_final.prmtop
+printLJMatrix :1
+printLJMatrix :2
+# Log started on 09/18/2020 [mm/dd/yyyy] at 17:28:53
+parm en_step2_final.prmtop
+printLJMatrix :1
+printLJMatrix :2

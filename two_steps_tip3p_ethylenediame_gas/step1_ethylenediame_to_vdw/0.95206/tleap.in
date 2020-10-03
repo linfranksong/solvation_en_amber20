@@ -1,0 +1,12 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+source leaprc.water.tip3p
+loadamberparams frcmod.ions1lm_1264_tip3p
+loadamberparams frcmod.ions234lm_1264_tip3p
+EN=loadmol2 en.mol2
+mol = loadpdb input.pdb
+solvateoct mol TIP3PBOX 30.0
+addions2 mol Na+ 0
+addions2 mol Cl- 0
+saveamberparm mol en_step1.prmtop en_step1.inpcrd
+quit
