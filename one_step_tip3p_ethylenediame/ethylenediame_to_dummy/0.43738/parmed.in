@@ -1,0 +1,28 @@
+parm en_step1_final.prmtop
+loadRestrt en_step1_final.inpcrd
+setOverwrite True
+change AMBER_ATOM_TYPE :2@N1 n3cg
+change AMBER_ATOM_TYPE :2@N2 n3cg
+change AMBER_ATOM_TYPE :2@C3 c3cg
+change AMBER_ATOM_TYPE :2@C4 c3cg
+change AMBER_ATOM_TYPE :2@H5 hncg
+change AMBER_ATOM_TYPE :2@H6 hncg
+change AMBER_ATOM_TYPE :2@H7 hncg
+change AMBER_ATOM_TYPE :2@H8 hncg
+change AMBER_ATOM_TYPE :2@H9 h1cg
+change AMBER_ATOM_TYPE :2@H10 h1cg
+change AMBER_ATOM_TYPE :2@H11 h1cg
+change AMBER_ATOM_TYPE :2@H12 h1cg
+addLJType @%n3cg
+addLJType @%c3cg
+addLJType @%hncg
+addLJType @%h1cg
+change CHARGE :2@%n3cg 0
+changeLJSingleType :2@%n3cg 0 0
+change CHARGE :2@%hncg 0
+changeLJSingleType :2@%hncg 0 0
+change CHARGE :2@%c3cg 0
+changeLJSingleType :2@%c3cg 0 0
+change CHARGE :2@%h1cg 0
+changeLJSingleType :2@%h1cg 0 0
+outparm en_step2_final.prmtop en_step2_final.inpcrd
