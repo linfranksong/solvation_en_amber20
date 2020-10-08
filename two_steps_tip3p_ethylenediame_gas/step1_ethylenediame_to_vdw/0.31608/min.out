@@ -6,11 +6,11 @@
 | PMEMD implementation of SANDER, Release 18
 
 |  Compiled date/time: Mon Apr 27 21:19:54 2020
-| Run on 09/30/2020 at 12:16:59
+| Run on 10/07/2020 at 15:21:40
 
 |   Executable path: /opt/software/Amber/20-fosscuda-2019b/amber20/bin/pmemd.cuda
 | Working directory: /mnt/ls15/scratch/users/songlin3/run/solvation_amber20/en/two_steps_tip3p_ethylenediame_gas/step1_ethylenediame_to_vdw/0.31608
-|          Hostname: lac-080
+|          Hostname: lac-081
 
   [-O]verwriting output
 
@@ -36,8 +36,8 @@ minimization
   maxcyc=20000,                                                                
   ncyc=10000,                                                                  
   cut=10.0,                                                                    
-  ntc=2,                                                                       
-  ntf=2,                                                                       
+  ntc=1,                                                                       
+  ntf=1,                                                                       
   ntb=1,                                                                       
   ntpr=5000,                                                                   
   ntwr=5000,                                                                   
@@ -51,7 +51,7 @@ minimization
 /                                                                              
 
 
-Note: ig = -1. Setting random seed to   699062 based on wallclock time in 
+Note: ig = -1. Setting random seed to   203097 based on wallclock time in 
       microseconds.
 | irandom = 1, using AMBER's internal random number generator (default).
  
@@ -189,7 +189,7 @@ Nature and format of output:
      ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
 
 Potential function:
-     ntf     =       2, ntb     =       1, igb     =       0, nsnb    =      25
+     ntf     =       1, ntb     =       1, igb     =       0, nsnb    =      25
      ipol    =       0, gbsa    =       0, iesp    =       0
      dielc   =   1.00000, cut     =  10.00000, intdiel =   1.00000
 
@@ -199,10 +199,6 @@ Frozen or restrained atoms:
 Energy minimization:
      maxcyc  =   20000, ncyc    =   10000, ntmin   =       1
      dx0     =   0.01000, drms    =   0.00010
-
-SHAKE:
-     ntc     =       2, jfastw  =       0
-     tol     =   0.00001
 
 Free energy options:
      icfe    =       1, ifsc    =       0, klambda =       1
@@ -262,14 +258,14 @@ Total charge of  -0.00000000 removed from      12 atoms
      Skip neutralizing charges...
 
 | Dynamic Memory, Types Used:
-| Reals              144423
-| Integers             2386
+| Reals              144407
+| Integers             2354
 
 | Nonbonded Pairs Initial Allocation:        7259
 
 | GPU memory information (estimate):
-| KB of GPU memory in use:    166031
-| KB of CPU memory in use:     34319
+| KB of GPU memory in use:    166032
+| KB of CPU memory in use:     34320
 
 --------------------------------------------------------------------------------
    4.  RESULTS
@@ -281,72 +277,72 @@ Total charge of  -0.00000000 removed from      12 atoms
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-      1       2.0552E+01     2.6018E+01     4.2180E+01     C4          4
+      1       2.0554E+01     2.3007E+01     4.2030E+01     C4          4
 
- BOND    =        1.6142  ANGLE   =        5.5171  DIHED      =        1.5241
- VDWAALS =       -0.0825  EEL     =      -19.9160  HBOND      =        0.0000
- 1-4 VDW =        1.0948  1-4 EEL =       30.8001  RESTRAINT  =        0.0000
- DV/DL  =       -15.9143
+ BOND    =        1.6151  ANGLE   =        5.5194  DIHED      =        1.5241
+ VDWAALS =       -0.0825  EEL     =      -19.9172  HBOND      =        0.0000
+ 1-4 VDW =        1.0949  1-4 EEL =       30.8005  RESTRAINT  =        0.0000
+ DV/DL  =       -15.9132
 
 | TI region  2
 
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-      1       2.0552E+01     2.6018E+01     4.2180E+01     C4          4
+      1       2.0554E+01     2.3007E+01     4.2030E+01     C4          4
 
- BOND    =        1.6142  ANGLE   =        5.5171  DIHED      =        1.5241
- VDWAALS =       -0.0825  EEL     =      -19.9160  HBOND      =        0.0000
- 1-4 VDW =        1.0948  1-4 EEL =       30.8001  RESTRAINT  =        0.0000
- DV/DL  =       -15.9143
+ BOND    =        1.6151  ANGLE   =        5.5194  DIHED      =        1.5241
+ VDWAALS =       -0.0825  EEL     =      -19.9172  HBOND      =        0.0000
+ 1-4 VDW =        1.0949  1-4 EEL =       30.8005  RESTRAINT  =        0.0000
+ DV/DL  =       -15.9132
 
 | TI region  1
 
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-   5000       9.6660E+00     7.8541E-01     1.5818E+00     H5          5
+   5000       9.6535E+00     1.3245E-03     2.9262E-03     C4          4
 
- BOND    =        0.0151  ANGLE   =        0.0747  DIHED      =        0.2395
- VDWAALS =       -0.0852  EEL     =      -18.6286  HBOND      =        0.0000
- 1-4 VDW =        0.3512  1-4 EEL =       27.6992  RESTRAINT  =        0.0000
- DV/DL  =       -13.2628
+ BOND    =        0.0272  ANGLE   =        0.0727  DIHED      =        0.2052
+ VDWAALS =       -0.0849  EEL     =      -18.5973  HBOND      =        0.0000
+ 1-4 VDW =        0.3536  1-4 EEL =       27.6769  RESTRAINT  =        0.0000
+ DV/DL  =       -13.2759
 
 | TI region  2
 
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-   5000       9.6660E+00     7.8541E-01     1.5818E+00     H5          5
+   5000       9.6535E+00     1.3245E-03     2.9262E-03     C4          4
 
- BOND    =        0.0151  ANGLE   =        0.0747  DIHED      =        0.2395
- VDWAALS =       -0.0852  EEL     =      -18.6286  HBOND      =        0.0000
- 1-4 VDW =        0.3512  1-4 EEL =       27.6992  RESTRAINT  =        0.0000
- DV/DL  =       -13.2628
+ BOND    =        0.0272  ANGLE   =        0.0727  DIHED      =        0.2052
+ VDWAALS =       -0.0849  EEL     =      -18.5973  HBOND      =        0.0000
+ 1-4 VDW =        0.3536  1-4 EEL =       27.6769  RESTRAINT  =        0.0000
+ DV/DL  =       -13.2759
 
 | TI region  1
 
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-  10000       9.6660E+00     7.8530E-01     1.5805E+00     H5          5
+  10000       9.6535E+00     3.8686E-04     5.9492E-04     H8          8
 
- BOND    =        0.0151  ANGLE   =        0.0746  DIHED      =        0.2409
- VDWAALS =       -0.0852  EEL     =      -18.6237  HBOND      =        0.0000
- 1-4 VDW =        0.3508  1-4 EEL =       27.6936  RESTRAINT  =        0.0000
- DV/DL  =       -13.2616
+ BOND    =        0.0272  ANGLE   =        0.0727  DIHED      =        0.2052
+ VDWAALS =       -0.0849  EEL     =      -18.5972  HBOND      =        0.0000
+ 1-4 VDW =        0.3536  1-4 EEL =       27.6768  RESTRAINT  =        0.0000
+ DV/DL  =       -13.2758
 
 | TI region  2
 
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-  10000       9.6660E+00     7.8530E-01     1.5805E+00     H5          5
+  10000       9.6535E+00     3.8686E-04     5.9492E-04     H8          8
 
- BOND    =        0.0151  ANGLE   =        0.0746  DIHED      =        0.2409
- VDWAALS =       -0.0852  EEL     =      -18.6237  HBOND      =        0.0000
- 1-4 VDW =        0.3508  1-4 EEL =       27.6936  RESTRAINT  =        0.0000
- DV/DL  =       -13.2616
+ BOND    =        0.0272  ANGLE   =        0.0727  DIHED      =        0.2052
+ VDWAALS =       -0.0849  EEL     =      -18.5972  HBOND      =        0.0000
+ 1-4 VDW =        0.3536  1-4 EEL =       27.6768  RESTRAINT  =        0.0000
+ DV/DL  =       -13.2758
 
      .... RESTARTED DUE TO LINMIN FAILURE ...
 
@@ -367,24 +363,24 @@ Total charge of  -0.00000000 removed from      12 atoms
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-  11139       9.6661E+00     7.8497E-01     1.5765E+00     H5          5
+  10689       8.9851E+00     6.0833E-01     1.1840E-01     H5          5
 
- BOND    =        0.0150  ANGLE   =        0.0743  DIHED      =        0.2449
- VDWAALS =       -0.0851  EEL     =      -18.6093  HBOND      =        0.0000
- 1-4 VDW =        0.3494  1-4 EEL =       27.6768  RESTRAINT  =        0.0000
- DV/DL  =       -13.2582
+ BOND    =        0.0241  ANGLE   =        0.0701  DIHED      =        0.0757
+ VDWAALS =       -0.1358  EEL     =      -17.5848  HBOND      =        0.0000
+ 1-4 VDW =        0.2648  1-4 EEL =       26.2710  RESTRAINT  =        0.0000
+ DV/DL  =       -12.7007
 
 | TI region  2
 
 
 
    NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
-  11139       9.6661E+00     7.8497E-01     1.5765E+00     H5          5
+  10689       8.9851E+00     6.0833E-01     1.1840E-01     H5          5
 
- BOND    =        0.0150  ANGLE   =        0.0743  DIHED      =        0.2449
- VDWAALS =       -0.0851  EEL     =      -18.6093  HBOND      =        0.0000
- 1-4 VDW =        0.3494  1-4 EEL =       27.6768  RESTRAINT  =        0.0000
- DV/DL  =       -13.2582
+ BOND    =        0.0241  ANGLE   =        0.0701  DIHED      =        0.0757
+ VDWAALS =       -0.1358  EEL     =      -17.5848  HBOND      =        0.0000
+ 1-4 VDW =        0.2648  1-4 EEL =       26.2710  RESTRAINT  =        0.0000
+ DV/DL  =       -12.7007
 
      ***** REPEATED LINMIN FAILURE *****
 --------------------------------------------------------------------------------
@@ -395,14 +391,14 @@ Total charge of  -0.00000000 removed from      12 atoms
 |
 |     Routine           Sec        %
 |     ------------------------------
-|     Nonbond           8.02   91.67
+|     Nonbond           7.51   92.09
 |     Bond              0.00    0.00
 |     Angle             0.00    0.00
 |     Dihedral          0.00    0.00
-|     Shake             0.02    0.24
-|     Other             0.71    8.08
+|     Shake             0.00    0.00
+|     Other             0.65    7.91
 |     ------------------------------
-|     Total             8.75
+|     Total             8.16
 
 |  PME Nonbond Pairlist CPU Time:
 |
@@ -419,9 +415,9 @@ Total charge of  -0.00000000 removed from      12 atoms
 |     ---------------------------------
 |     NonBonded Calc       0.00    0.00
 |     Exclude Masked       0.00    0.00
-|     Other                0.02    0.27
+|     Other                0.02    0.28
 |     ---------------------------------
-|     Total                0.02    0.27
+|     Total                0.02    0.28
 
 |  PME Reciprocal Force CPU Time:
 |
@@ -435,10 +431,10 @@ Total charge of  -0.00000000 removed from      12 atoms
 |     ---------------------------------
 |     Total                0.00    0.00
 
-|  Setup CPU time:            0.51 seconds
-|  NonSetup CPU time:         8.75 seconds
-|  Total CPU time:            9.26 seconds     0.00 hours
+|  Setup CPU time:            0.57 seconds
+|  NonSetup CPU time:         8.16 seconds
+|  Total CPU time:            8.72 seconds     0.00 hours
 
-|  Setup wall time:           0    seconds
-|  NonSetup wall time:        9    seconds
+|  Setup wall time:           1    seconds
+|  NonSetup wall time:        8    seconds
 |  Total wall time:           9    seconds     0.00 hours

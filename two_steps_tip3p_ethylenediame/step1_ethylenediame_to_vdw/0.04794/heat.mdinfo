@@ -1,20 +1,25 @@
 
- NSTEP =   100000   TIME(PS) =     200.000  TEMP(K) =   299.50  PRESS =     0.0
- Etot   =    -53315.9104  EKtot   =     12472.9407  EPtot      =    -65788.8511
- BOND   =         0.6824  ANGLE   =         6.9143  DIHED      =         0.9855
- 1-4 NB =         0.9537  1-4 EEL =        40.6935  VDWAALS    =      9669.9431
- EELEC  =    -75509.0235  EHBOND  =         0.0000  RESTRAINT  =         0.0000
- DV/DL  =        -0.3989
+ NSTEP =   185000   TIME(PS) =     185.000  TEMP(K) =   291.55  PRESS =     0.0
+ Etot   =    -48864.0853  EKtot   =     18210.6716  EPtot      =    -67074.7570
+ BOND   =     13057.6320  ANGLE   =         5.9952  DIHED      =         0.5704
+ 1-4 NB =         0.7681  1-4 EEL =        38.1327  VDWAALS    =     14032.9800
+ EELEC  =    -94210.8354  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ DV/DL  =        -1.3544
  NMR restraints: Bond =    0.000   Angle =     0.000   Torsion =     0.000
 ===============================================================================
-
-|  Final Performance Info:
-|     -----------------------------------------------------
-|     Average timings for last   25000 steps:
-|     Elapsed(s) =      62.30 Per Step(ms) =       2.49
-|         ns/day =      69.34   seconds/ns =    1245.96
+ ------------------------------------------------------------------------------
+| Current Timing Info
+| -------------------
+| Total steps:    200000 | Completed:    185000 ( 92.5%) | Remaining:     15000
 |
-|     Average timings for all steps:
-|     Elapsed(s) =     244.11 Per Step(ms) =       2.44
-|         ns/day =      70.79   seconds/ns =    1220.55
-|     -----------------------------------------------------
+| Average timings for last   25000 steps:
+|     Elapsed(s) =      60.44 Per Step(ms) =       2.42
+|         ns/day =      35.74   seconds/ns =    2417.63
+|
+| Average timings for all steps:
+|     Elapsed(s) =     442.34 Per Step(ms) =       2.39
+|         ns/day =      36.13   seconds/ns =    2391.05
+|
+|
+| Estimated time remaining:      35.9 seconds.
+ ------------------------------------------------------------------------------
